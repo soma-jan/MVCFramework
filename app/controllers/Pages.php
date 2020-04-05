@@ -2,6 +2,8 @@
   class Pages extends Controller {
     public function __construct(){
          //echo 'constructo';
+         $this->postModel = $this->model('Post');
+    
     }
 
     public function index(){
@@ -13,6 +15,10 @@
     }
 
     public function about(){
-      $this->view('/Pages/about');
+      $data = [
+        'title' => 'ABOUT US'
+      ];
+
+      $this->view('/Pages/about',$data);
     }
   }
