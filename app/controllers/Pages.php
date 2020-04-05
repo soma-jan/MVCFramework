@@ -9,10 +9,10 @@
         'title' => 'Welcome'
       ];
 
-      $this->view('hello');
+      $this->view('/Pages/index',$data);
     }
 
     public function about(){
-      //$this->view('pages/about');
+      $this->view('/Pages/about');
     }
   }
