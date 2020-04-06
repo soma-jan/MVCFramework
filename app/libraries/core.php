@@ -42,6 +42,7 @@
                         echo  $this->currentMethod;
 
                     }
+                    
                  }    
                  else
                     {
